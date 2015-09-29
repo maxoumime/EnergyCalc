@@ -2,8 +2,10 @@
 
 == Mesure de la consommation d'un Raspberry Pi
 
-=== Solutions possibles
-* Mesure directe : récupération via Voltmètre branché sur GPIO. Non retenu contenu du problème de stockage des valeurs mesurées par ce biais
+=== Solutions possibles, non retenues
+* Mesure directe : récupération via Voltmètre branché sur GPIO. Non retenu contenu du problème de stockage des valeurs mesurées par ce biais.
+* Mesure directe : alimentation du raspberry via un générateur branché sur la première entrée 5V. Récupération via Ampèremètre branché sur la seconde entrée 5V et la masse, permettant de fermer le circuit. Suivant les même éxplications que précédemment, cette solution n'est pas retenue.
+* Mesure indirecte : outil powertop, développé par Intel, permettant de monitorer et diminuer la consommation d'energie d'une architecture type Raspberry. Cette solution haut niveau n'a pas été retenue car considérée comme trop simpliste. 
 
 === Solution retenue
 * Utilisation des PINs GPIO du Raspberry pour l'alimentation, permettant de mieux mesurer la tension entrante
