@@ -15,7 +15,7 @@
 '''
 === Solution retenue
 ====== Mesure indirecte : Arduino, circuit parallèle
-* Utilisation des PINs GPIO du Raspberry pour l'alimentation, permettant de mieux mesurer l'intensiter sortante
+* Utilisation des PINs GPIO du Raspberry pour l'alimentation, permettant de mieux mesurer l'intensité sortante
 * Utilisation d'un générateur de courant pour l'alimentation
 * Relève du voltage depuis le GPIO vers la breadboard
 * La breadboard contient une résistance de fuite, dont la valeur est connue, afin d'effectuer une loi d'Ohm ultérieurement
