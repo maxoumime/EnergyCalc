@@ -2,6 +2,7 @@
 
 == Mesure de la consommation d'un Raspberry Pi
 === Solution
+'''
 ==== Solutions possibles, non retenues
 ====== Mesure directe : circuit parallèle
 * Récupération via Voltmètre branché sur GPIO. Non retenu contenu du problème de stockage des valeurs mesurées par ce biais.
@@ -14,7 +15,6 @@
 ====== Mesure indirecte : outil perf
 * Outil présent sur distributions linux, il permet la récupération de rapport d'utilisation de la consommation. Par extrapolation linéaire, il est possible de récuperer la consommation d'un raspberry. Cette solution n'a pas été retenue, elle est considérée comme un peu simpliste contenu du fait qu'aucun montage n'est necessaire
 
-'''
 ==== Solution retenue
 ====== Mesure indirecte : Arduino, circuit parallèle
 Basée sur la première solution 
@@ -27,7 +27,8 @@ Basée sur la première solution
 * On peut même imaginer l'Arduino contrôler le générateur
 
 === Protocole
+'''
 ====== Matériel necessaire
-[RAF]
+A faire
 ====== Démarche de mise en oeuvre
-[RAF]
+A faire
