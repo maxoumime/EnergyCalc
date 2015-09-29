@@ -18,6 +18,7 @@
 ==== Solution retenue
 ====== Mesure indirecte : Arduino, circuit parallèle
 Basée sur la première solution 
+
 * Utilisation des PINs GPIO du Raspberry pour l'alimentation, permettant de mieux mesurer l'intensité sortante
 * Utilisation d'un générateur de courant pour l'alimentation
 * Relève du voltage depuis le GPIO vers la breadboard
