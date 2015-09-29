@@ -1,8 +1,8 @@
 = Green IT
 
 == Mesure de la consommation d'un Raspberry Pi
-
-=== Solutions possibles, non retenues
+=== Solution
+==== Solutions possibles, non retenues
 ====== Mesure directe : circuit parallèle
 * Récupération via Voltmètre branché sur GPIO. Non retenu contenu du problème de stockage des valeurs mesurées par ce biais.
 
@@ -11,10 +11,13 @@
 
 ====== Mesure indirecte : outil powertop
 * Outil développé par Intel, permettant de monitorer et diminuer la consommation d'energie d'une architecture type Raspberry. Cette solution haut niveau n'a pas été retenue car considérée comme trop simpliste. 
+====== Mesure indirecte : outil perf
+* Outil présent sur distributions linux, il permet la récupération de rapport d'utilisation de la consommation. Par extrapolation linéaire, il est possible de récuperer la consommation d'un raspberry. Cette solution n'a pas été retenue, elle est considérée comme un peu simpliste contenu du fait qu'aucun montage n'est necessaire
 
 '''
-=== Solution retenue
+==== Solution retenue
 ====== Mesure indirecte : Arduino, circuit parallèle
+Basée sur la première solution 
 * Utilisation des PINs GPIO du Raspberry pour l'alimentation, permettant de mieux mesurer l'intensité sortante
 * Utilisation d'un générateur de courant pour l'alimentation
 * Relève du voltage depuis le GPIO vers la breadboard
@@ -22,3 +25,9 @@
 * Récupération de la tension vers l'Arduino,  évitant de devoir utiliser un CAN, et le lancement d'un script sur le Raspbery
 * L'Arduino relève les valeurs, effectue une loi d'Ohm pour récupérer l'intensité correspondante, et écrit le tout dans un fichier / BDD
 * On peut même imaginer l'Arduino contrôler le générateur
+
+=== Protocole
+====== Matériel necessaire
+[RAF]
+====== Démarche de mise en oeuvre
+[RAF]
