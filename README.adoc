@@ -8,6 +8,8 @@
 === Solution retenue
 * Utilisation des PINs GPIO du Raspberry pour l'alimentation, permettant de mieux mesurer la tension entrante
 * Utilisation d'un générateur de courant pour l'alimentation
-* Relève du voltage / intensité depuis le GPIO vers l'Arduino, évitant de devoir utiliser un CAN, et le lancement d'un script sur le Raspbery
-* L'Arduino relève les valeurs, effectue les calculs correspondants, et écrit le tout dans un fichier / BDD
-* On peut même imaginer le contrôle du générateur de courant depuis l'Arduino
+* Relève du voltage depuis le GPIO vers la breadboard
+* La breadboard contient une résistance de fuite, dont la valeur est connue, afin d'effectuer une loi d'Ohm ultérieurement
+* Récupération de la tension vers l'Arduino,  évitant de devoir utiliser un CAN, et le lancement d'un script sur le Raspbery
+* L'Arduino relève les valeurs, effectue une loi d'Ohm pour récupérer l'intensité correspondante, et écrit le tout dans un fichier / BDD
+* On peut même imaginer l'Arduino contrôler le générateur
