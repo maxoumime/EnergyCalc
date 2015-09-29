@@ -2,6 +2,10 @@
 
 == Mesure de la consommation d'un Raspberry Pi
 
+=== Solutions possibles
+* Mesure directe : récupération via Voltmètre branché sur GPIO. Non retenu contenu du problème de stockage des valeurs mesurées par ce biais
+
+=== Solution retenue
 * Utilisation des PINs GPIO du Raspberry pour l'alimentation, permettant de mieux mesurer la tension entrante
 * Utilisation d'un générateur de courant pour l'alimentation
 * Relève du voltage / intensité depuis le GPIO vers l'Arduino, évitant de devoir utiliser un CAN, et le lancement d'un script sur le Raspbery
