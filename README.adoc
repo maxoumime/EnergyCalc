@@ -11,6 +11,7 @@
 
 ====== Mesure indirecte : outil powertop
 * Outil développé par Intel, permettant de monitorer et diminuer la consommation d'energie d'une architecture type Raspberry. Cette solution haut niveau n'a pas été retenue car considérée comme trop simpliste. 
+
 '''
 === Solution retenue
 ====== Mesure indirecte : Arduino, circuit parallèle
