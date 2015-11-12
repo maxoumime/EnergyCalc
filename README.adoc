@@ -12,10 +12,12 @@
 
 ====== Mesure indirecte : outil powertop
 * Outil développé par Intel, permettant de monitorer et diminuer la consommation d'energie d'une architecture type Raspberry. Cette solution haut niveau n'a pas été retenue car considérée comme trop simpliste. 
+
 ====== Mesure indirecte : outil perf
 * Outil présent sur distributions linux, il permet la récupération de rapport d'utilisation de la consommation. Par extrapolation linéaire, il est possible de récuperer la consommation d'un raspberry. Cette solution n'a pas été retenue, elle est considérée comme un peu simpliste contenu du fait qu'aucun montage n'est necessaire
 
 ==== Solution retenue
+
 ====== Mesure indirecte : Arduino, circuit parallèle
 Basée sur la première solution 
 
