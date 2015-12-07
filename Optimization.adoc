@@ -1,11 +1,15 @@
-=Optimization 
-== Baisse de la consommation d'un Raspberry Pi
-=== Solution
-'''
-1- Recherche du langage le plus rapide et permettant de réaliser le code demande dans le temps imparti
-2- Installer la distribution la plus légère
-3- Désinstaller l'ensemble des services non utiles (ex: services réseau)
-4- Underclocking pasage de 700MHz à 600 => mettre à jour la valeur "arm_freq" dans /boot/config.txt 
-5- Choisir un Raspberry A(+)
-6- Chercher le maintien de l'énergie > stabilisation thermique
-7- Modifier mémoire attribuée au GPU au minimum (1Mo!) => mettre à jour la valeur "gpu_mem" dans /boot/config.txt 
+- Optimization 
+> Baisse de la consommation d'un Raspberry Pi
+
+Système
+- Installer la distribution la plus légère
+- Désinstaller l'ensemble des services non utiles (ex: services réseau)
+
+Matériel 
+- Choisir un Raspberry A(+)
+- Underclocking pasage de 700MHz à 600 => mettre à jour la valeur "arm_freq" dans /boot/config.txt 
+- Baisse mémoire attribuée au GPU au minimum (1Mo!) => mettre à jour la valeur "gpu_mem" dans /boot/config.txt 
+- Chercher le maintien de l'énergie > stabilisation thermique
+
+Logiciel
+- Recherche du langage le plus rapide (non interprété) et permettant de réaliser le code demande dans le temps imparti
