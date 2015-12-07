@@ -6,4 +6,4 @@ Optimization
 4- Underclocking
 5- Choisir un Raspberry A(+)
 6- Chercher le maintien de l'énergie > stabilisation thermique
-
+7- Modifier mémoire attribuée au GPU au minimum (1Mo!) => mettre à jour la valeur "gpu_mem" dans /boot/config.txt 
